@@ -39,6 +39,14 @@
                 <div class="form-group">
                   <input name="senha" type="password" class="form-control" placeholder="Senha">
                 </div>
+
+                <?php if(isset($_GET['login'])){ ?>
+
+                  <div class="text-danger">Usuario ou senha invalidos</div>
+
+                <?php } ?>
+
+
                 <button class="btn btn-lg btn-info btn-block" type="submit">Entrar</button>
               </form>
             </div>
